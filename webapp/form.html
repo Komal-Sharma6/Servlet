@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Register Form</title>
+    <style>
+        .container{
+         width: 30%;
+         border: 1px solid black;
+         margin: auto;
+         padding: 20px;
+         font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+<h1>Register Form</h1>
+<form id="myform" action="RegisterServlet" method="post">
+    <table>
+        <tr>
+            <td> Enter your name: </td>
+            <td><input type="text" name="user_name" placeholder="Enter here"/></td>
+        </tr>
+        <tr>
+            <td>Enter password: </td>
+            <td><input type="password" name="user_password" placeholder="Enter here"/></td>
+        </tr>
+        <tr>
+            <td>Select Gender:</td>
+            <td><input type="radio" name="user_gender" value="male"/>Male &nbsp; &nbsp;<input type="radio" name="user_gender" value="female"/>Female</td>
+        </tr>
+        <tr>
+            <td>Select Course:</td>
+            <td>
+                <select name="user_course">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="javascript">JavaScript</option>
+                <option value="salesforce">Salesforce</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text align: right;">
+                <input type="checkbox" name="condition" value="checked"/>
+            </td>
+
+            <td> Agree to all terms and conditions.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="register">Register</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+</div>
+</body>
+</html>
